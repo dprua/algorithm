@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <iostream>
+
 
 void merge(int* arr, int n, int middle, int m);
 void merge_sort(int* arr, int n, int m);
@@ -30,7 +28,7 @@ void merge(int *arr,int n,int middle,int m) {
 			sorted[k] = arr[i];
 			i++;
 		}
-		//else¹® ´ë½Å¿¡ if¹®À¸·Î Â¥¸é ¾ÈµÇ´Â ÀÌÀ¯
+		//elseë¬¸ ëŒ€ì‹ ì— ifë¬¸ìœ¼ë¡œ ì§œë©´ ì•ˆë˜ëŠ” ì´ìœ 
 		else {
 			sorted[k] = arr[j];
 			j++;			
@@ -43,7 +41,7 @@ void merge(int *arr,int n,int middle,int m) {
 			k++;
 		}
 	}
-	//else¹® ´ë½Å¿¡ if¹®À¸·Î Â¥¸é ¾ÈµÇ´Â ÀÌÀ¯
+	//elseë¬¸ ëŒ€ì‹ ì— ifë¬¸ìœ¼ë¡œ ì§œë©´ ì•ˆë˜ëŠ” ì´ìœ 
 	else {
 		for (t = i; t <= middle; t++) {
 			sorted[k] = arr[t];
