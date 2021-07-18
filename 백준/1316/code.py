@@ -4,7 +4,6 @@ for i in range(int(input())):
     word = input()
     pass_char = []
     current = ''
-    info = list(set(word))#happya > h a p y
     flag = True
     for char in word:
         if char not in pass_char:
