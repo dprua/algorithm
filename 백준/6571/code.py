@@ -1,7 +1,7 @@
 
 DP = []
 DP.append(1)
-DP.append(1)
+DP.append(2)
 
 for i in range(2,1001):
     val = DP[i-1] + DP[i-2]
