@@ -1,3 +1,12 @@
+'''
+-*- coding: utf-8 -*-
+
+기존에 list를 사용해서 구현했을 때는 list의 구조상 삽입과 삭제시 소요되는 시간이 최소 O(n) or O(nlogn) 이므로
+문제에서 요구하는 효율성 테스트에서 통과하지 못했다.
+그래서 삽입과 삭제가 O(1)이 소요되는 dubbly linked list를 사용해서 구현하였다.
+구현의 용이성을 위해 파이썬의 dict 구조체를 사용하였다.
+'''
+
 def solution(n, k, cmd):
     
     answer = ''
